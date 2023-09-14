@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      const liveTime = () => {
+        const timeDisplay = document.getElementById('time')
+        const options = {
+          hour: 'numeric',
+          minute: '2-digit',
+          hour12: false,
+        }
+        timeDisplay.textContent = new Date().toLocaleTimeString(
+          'en-IN',
+          options
+        )
+      }
+      setInterval(liveTime, 1000)
+
+      const liveDate = () => {
+        const dateDisplay = document.getElementById('date')
+        const options = {
+          weekday: 'short',
+          month: 'long',
+          day: 'numeric',
+        }
+        dateDisplay.textContent = new Date().toLocaleDateString(
+          'en-IN',
+          options
+        )
+      }
+
+      window.onload = () => liveDate()
+    </script>
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="datetime">
+        <span id="time"></span>
+        <span id="date"></span>
+      </div>
+
+      <div class="bookmarks">
+        <div class="card">
+          <h3>Google</h3>
+          <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">
+            Gmail
+          </a>
+          <a target="_blank" href="https://drive.google.com/drive/my-drive">
+            Drive
+          </a>
+
+          <a target="_blank" href="https://www.youtube.com/"> YouTube </a>
+          <a target="_blank" href="https://keep.google.com/u/0/"> Keep </a>
+          <a target="_blank" href="https://docs.google.com/document/u/0/">
+            Docs
+          </a>
+          <a target="_blank" href="https://docs.google.com/spreadsheets/u/0/">
+            Sheets
+          </a>
+        </div>
+        <div class="card">
+          <h3>Social Media</h3>
+          <a target="_blank" href="https://web.whatsapp.com/"> WhatsApp </a>
+          <a target="_blank" href="https://www.reddit.com/">Reddit</a>
+          <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+          <a target="_blank" href="https://web.telegram.org/a/"> Telegram </a>
+          <a target="_blank" href="https://discord.com/channels/@me">
+            Discord
+          </a>
+        </div>
+        <div class="card">
+          <h3>Tracking</h3>
+          <a target="_blank" href="https://letterboxd.com/"> Letterboxd </a>
+          <a target="_blank" href="https://www.tvtime.com/en"> TV Time </a>
+          <a target="_blank" href="https://anilist.co/home"> AniList </a>
+          <a target="_blank" href="https://app.thestorygraph.com">
+            StoryGraph
+          </a>
+        </div>
+        <div class="card">
+          <h3>Practice</h3>
+          <a target="_blank" href="https://leetcode.com/problemset/all/">
+            LeetCode
+          </a>
+          <a target="_blank" href="https://www.hackerrank.com/dashboard">
+            HackerRank
+          </a>
+          <a target="_blank" href="https://codepen.io/your-work"> CodePen </a>
+          <a target="_blank" href="https://www.typing.com/student/lessons">
+            Typing
+          </a>
+        </div>
+        <div class="card">
+          <h3>Web Dev</h3>
+
+          <a target="_blank" href="https://developer.mozilla.org/en-US/">
+            MDN
+          </a>
+          <a target="_blank" href="https://react.dev/"> React.dev </a>
+          <a target="_blank" href="https://fonts.google.com/"> Google Fonts </a>
+          <a
+            target="_blank"
+            href="https://mui.com/material-ui/getting-started/"
+          >
+            MUI
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Misc</h3>
+          <a
+            target="_blank"
+            href="https://chrome.google.com/webstore/category/extensions/"
+          >
+            Chrome Web Store
+          </a>
+          <a target="_blank" href="https://wallhaven.cc/"> wallhaven </a>
+          <a target="_blank" href="https://smartthingsfind.samsung.com/">
+            Find My Phone
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

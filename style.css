@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Lobster';
+  src: local('Lobster'), url(./Lobster-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+}
+
+.body {
+  min-height: 100vh;
+  background-color: #131020;
+  background-size: 300px;
+}
+
+.datetime {
+  color: white;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  min-height: 190px;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Lobster';
+}
+
+#time {
+  font-size: 90px;
+}
+
+#date {
+  font-size: 30px;
+}
+
+.bookmarks {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  width: 120px;
+  margin: 15px;
+  background-color: #d81159;
+  border-radius: 5px;
+  opacity: 0.9;
+  padding: 5px 15px;
+}
+
+.card h3 {
+  color: black;
+  margin: 0;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.card a {
+  color: white;
+  margin: 5px auto;
+  font-size: 14px;
+}
+
+.card a:link {
+  text-decoration: none;
+}
+.card a:visited {
+  text-decoration: none;
+}
+.card a:active {
+  text-decoration: underline;
+}
+.card a:hover {
+  text-decoration: underline;
+}
